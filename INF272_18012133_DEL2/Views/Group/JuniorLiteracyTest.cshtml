@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JuniorLiteracyTest</title>
+   
+</head>
+@using (Html.BeginForm("JuniorLiteracyTest", "Group"))
+{
+<body>
+    <center>
+        <div>
+            <h1>Literacy Test</h1>
+            <p>
+
+            </p>
+            <label>
+                Question1 :The dog ______hungry
+            </label>
+            <br />
+
+            <label><input type="radio" name="Admin">Are</label><br />
+            <label><input type="radio" name="Admin">In</label><br />
+            <label><input type="radio" name="Admin">That</label><br />
+
+            <br />
+            <p>
+
+            </p>
+            <label>
+                Question 2 : A monkey is an animal
+            </label>
+            <br />
+
+            <label><input type="radio" name="Admin">True</label>
+            <label><input type="radio" name="Admin">False</label>
+
+
+            <br />
+            <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("TestResults", "Group")'">Get results</button>
+            <p>
+
+            </p>
+            @Html.ActionLink("Previous Page", "JuniorLiteracy")
+            @Html.ActionLink("Home Page", "Home")
+        </div>
+    </center>
+</body>
+    }
+</html>

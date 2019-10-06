@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JuniorNumeracyTest</title>
+</head>
+@using (Html.BeginForm("JuniorNumeracyTest", "Group"))
+{
+
+
+<body>
+    <div>
+        <center>
+        <h1>Numeracy Test</h1>
+        <p>
+             
+        </p> 
+        <label>
+            Question1 :3 + 4 = ?
+        </label>
+        <br />
+        <label><input type="radio" name="Admin">8</label><br />
+        <p>
+
+        </p>
+        <label><input type="radio" name="Admin">7</label><br />
+        <p>
+
+        </p>
+           
+        <label><input type="radio" name="Admin">20</label>
+            <label>
+                Question 2 : 6- 0 = ?
+            </label>
+            <br />
+            <p>
+
+            </p>
+            <label><input type="radio" name="Admin">6</label><br />
+            <label><input type="radio" name="Admin">12</label><br />
+            <label><input type="radio" name="Admin">0</label>
+
+            <br />
+     <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("TestResults", "Group")'">Get results</button>
+<p>
+
+</p>
+@Html.ActionLink("Previous Page", "JuniorNumeracy")
+@Html.ActionLink("Home Page", "LoggedIn")
+        </center>
+    </div>
+</body>
+}
+</html>

@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JuniorLiteracy</title>
+</head>
+
+@using (Html.BeginForm("JuniorLiteracy", "Group"))
+{
+
+    <body>
+        <center>
+            <div>
+                <h1>Literacy</h1>
+                <p>
+                    Literacy has been defined in various ways over the years. Previously , being able to sign your name was considered a reasonable sign of literacy . Our
+                </p> understanding of what it means to be literate has altered and current definitions have taken into account the literacy demands
+                <p>
+                    of the society we live in.A more recent definition of literacy is the understanding , evaluating , using and engaging with written texts to participate in society, to achieve
+                </p>personal goals and ambitions and to develop knowledge and potential .
+                <p>
+                    Literacy is the ability to read , write , speak and listen in ways
+                    that will allow us to communicate effectively to a variety of different audiences to make sense of the world .
+                </p>
+
+                <br />
+                <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("JuniorLiteracyTest", "Group")'">Take Test</button>
+   <p>
+
+                </p>
+                <br />
+                <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("JuniorPhaseSubject", "Group")'">Back</button>
+
+        
+        @Html.ActionLink("Home Page", "LoggedIn")
+
+        </div>
+    </center>
+
+    </body>
+}
+</html>
